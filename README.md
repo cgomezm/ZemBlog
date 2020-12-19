@@ -31,7 +31,7 @@ User credentials for MVC App (harcoded)
   
 MVC and API are published on Azure
  
- *Consider they are using Azure app service free plan.
+ *Advise: they are using Azure app service free plan.
  
  MVC url --> https://zemblog.azurewebsites.net/
  API url --> https://zemblogapi.azurewebsites.net/
