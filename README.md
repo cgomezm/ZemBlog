@@ -35,3 +35,6 @@ MVC and API are published on Azure
  
  MVC url --> https://zemblog.azurewebsites.net/
  API url --> https://zemblogapi.azurewebsites.net/
+
+
+Demo build time ≈ 5 Hr
