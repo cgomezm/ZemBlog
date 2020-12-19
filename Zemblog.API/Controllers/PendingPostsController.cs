@@ -7,7 +7,7 @@ using ZemBlog.Data.Interfaces;
 namespace Zemblog.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class PendingPostsController : ControllerBase
     {
         private IPostRepository postRepository;
@@ -33,7 +33,7 @@ namespace Zemblog.API.Controllers
         /// <param name="action">1. Approve 2. Reject</param>
         /// <param name="postId">Id of post to update</param>
         /// <returns></returns>
-        [HttpPost]        
+        [HttpPost("updatestatus")]        
         public async Task<IActionResult> Post(int postId, string action)
         {
             return Ok(await postRepository.UpdatePostStatus(postId,(PostStatus)Enum.Parse(typeof(PostStatus), action)));

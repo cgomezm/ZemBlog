@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZemBlog.Data", "ZemBlog.Dat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zemblog.Domain", "Zemblog.Domain\Zemblog.Domain.csproj", "{D4CBFD7A-281E-4C91-BFB6-9DC4A9A54ADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemblog.API", "Zemblog.API\Zemblog.API.csproj", "{22FE7278-050B-412E-8A57-FE7FFF7AD876}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zemblog.API", "Zemblog.API\Zemblog.API.csproj", "{22FE7278-050B-412E-8A57-FE7FFF7AD876}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemblog.Tests", "Zemblog.Tests\Zemblog.Tests.csproj", "{6646DA9F-F453-414A-8B03-050266170306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6646DA9F-F453-414A-8B03-050266170306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6646DA9F-F453-414A-8B03-050266170306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6646DA9F-F453-414A-8B03-050266170306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6646DA9F-F453-414A-8B03-050266170306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
