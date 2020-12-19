@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZemBlogMVC", "ZemBlogMVC\ZemBlogMVC.csproj", "{4DB55179-80EB-41A6-89F5-08D7F7CB00EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZemBlog.Data", "ZemBlog.Data\ZemBlog.Data.csproj", "{B3CF9CB0-BA0B-4E30-BF2F-D0D789A27881}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Zemblog.Domain", "Zemblog.Domain\Zemblog.Domain.csproj", "{D4CBFD7A-281E-4C91-BFB6-9DC4A9A54ADA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zemblog.API", "Zemblog.API\Zemblog.API.csproj", "{22FE7278-050B-412E-8A57-FE7FFF7AD876}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DB55179-80EB-41A6-89F5-08D7F7CB00EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB55179-80EB-41A6-89F5-08D7F7CB00EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB55179-80EB-41A6-89F5-08D7F7CB00EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB55179-80EB-41A6-89F5-08D7F7CB00EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CF9CB0-BA0B-4E30-BF2F-D0D789A27881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CF9CB0-BA0B-4E30-BF2F-D0D789A27881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CF9CB0-BA0B-4E30-BF2F-D0D789A27881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CF9CB0-BA0B-4E30-BF2F-D0D789A27881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4CBFD7A-281E-4C91-BFB6-9DC4A9A54ADA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CBFD7A-281E-4C91-BFB6-9DC4A9A54ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CBFD7A-281E-4C91-BFB6-9DC4A9A54ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CBFD7A-281E-4C91-BFB6-9DC4A9A54ADA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FE7278-050B-412E-8A57-FE7FFF7AD876}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4C6554C-A688-40B8-A253-A6DF39D71D79}
+	EndGlobalSection
+EndGlobal

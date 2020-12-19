@@ -1,0 +1,69 @@
+﻿@using Zemblog.Domain
+@model IEnumerable<Zemblog.Domain.Post>
+
+@{
+    ViewData["Title"] = "Posts";
+}
+
+<h1>Posts</h1>
+
+@if (User.Identity.IsAuthenticated && User.IsInRole("editor"))
+{
+    <form id="postsindex" asp-action="Index" method="get">
+        <input type="checkbox" id="pendingOnly" name="pendingOnly" value="true" checked="@ViewBag.PendingOnly" onchange="document.getElementById('postsindex').submit();">
+        <label for="pendingOnly">Show Pending Posts Only?</label><br>
+    </form>
+}
+
+<div class="card-columns">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h4 class="card-title">@item.Title by @item.Author</h4>
+                <span class="card-title">Published on: @item.PublishedDate</span>
+                <p class="card-text">@item.Text</p>
+
+
+                @if (item.PostStatus != PostStatus.PendingApproval)
+                {
+                    <hr />
+                    <h6 class="card-title">Comentarios</h6>
+                    @for (int i = 0; i < item.Comments.Count; i++)
+                    {
+                        <p class="card-text">@item.Comments[i].Text  by @item.Comments[i].User</p>
+                        <hr />
+                    }
+
+
+                    <hr />
+                    <form asp-controller="posts" asp-action="AddComment" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" name="postId" value="@item.Id" />
+                        <div class="form-group">
+                            <label id="Text" class="control-label">Add a new Comment</label>
+                            <input id="Text" name="Text" class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-success" type="submit" value="Add Comment" />
+                        </div>
+                    </form>
+                }
+
+
+                @if (User.Identity.IsAuthenticated && User.IsInRole("editor"))
+                {
+                    <hr />
+                    if (item.PostStatus == PostStatus.PendingApproval)
+                    {
+
+                        <a class="btn btn-success" asp-action="UpdatePostStatus" asp-route-id="@item.Id" asp-route-status="@PostStatus.Approved">Approve Post</a>
+                        <a class="btn btn-warning" asp-action="UpdatePostStatus" asp-route-id="@item.Id" asp-route-status="@PostStatus.Rejected">Reject Post</a>
+                    }
+
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete Post</a>
+                }
+            </div>
+        </div>
+    }
+</div>
